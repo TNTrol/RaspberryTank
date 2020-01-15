@@ -18,3 +18,4 @@ class Tank(object):
 	def doing(self, value):
         	#something code
 		#with GPIO.output(pin, value)
+		pass
