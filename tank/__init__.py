@@ -17,7 +17,8 @@ def led(state):
 @app.route("/switch")
 def switch():
 	def state():
-		yield 'data: {0}\n\n'.format(json.dumps({'dat':button,'act':fg}))
+		var1 = 1
+		yield 'data: {0}\n\n'.format(json.dumps({'dat':var}))
 	time.sleep(1.0)
 	return Response(state(), mimetype='text/event-stream')
 
